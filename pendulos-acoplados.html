@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Péndulos acoplados</title>
+  <meta name="author" content="Willy Pregliasco">
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="./favicon.png" rel="icon">
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+
+  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">Intereses Eclécticos</a></h1>
+    <h2>Curiosidad documentada</h2>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+
+<ul class="main-navigation">
+      <li><a href="./pages/willy-pregliasco.html">Autor</a></li>
+    <li class="active">
+    <a href="./subcategory/experimental-1/show.html">Experimental 1</a>
+    </li>
+    <li >
+    <a href="./subcategory/misc/show.html">Misc</a>
+    </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">Péndulos acoplados</h1>
+      <p class="meta"><time datetime="2015-10-29T00:00:00-03:00" pubdate>jue 29 octubre 2015</time></p>
+</header>
+
+  <div class="entry-content"><p>Esta práctica muestra las propiedades de dos sistemas oscilatorios&nbsp;acoplados. </p>
+<p>Tiene muchas implicancias en mecánica, en los circuitos eléctricos y en la
+mecánica&nbsp;cuántica. </p>
+<h2>1. El&nbsp;experimento</h2>
+<p>El dispositivo experimental consiste en dos péndulos que cuelgan de una cuerda tensa común. Si hacemos oscilar un péndulo dejando quieto al otro, al rato observamos que el primero se queda quieto y oscila el segundo. La energía se transfiere completamente, de ida y de&nbsp;vuelta.</p>
+<p><img alt="Dispositivo" src="./experimental1/images/pendulos.png" /></p>
+<h2>2. Adquisición de&nbsp;datos</h2>
+<p>Sitema de la bobina y detección por cero.<br />
+<font color='gray'>(pronto vendrá más información aquí)</font></p>
+<h2>3. Medición&nbsp;básica</h2>
+<p><font color='gray'>(pronto vendrá más información aquí)</font></p>
+<h2>4. Procesamiento de&nbsp;datos</h2>
+<p>El sistema de adquisición mide unos piquitos dobles que indican el tiempo
+en que cada péndulo pasa por la posición de equilibrio. Esos piquitos tienen 
+una amplitud, un ancho y un tiempo central, el del cruce por&nbsp;cero. </p>
+<p>Para automatizar la extracción de esos parámetros, hicimos un 
+<a href="./pendulos-acoplados_procesamiento_basico.html">programa básico de procesamiento de&nbsp;datos</a>  </p>
+<p>Anda&nbsp;bien!</p>
+<h2>5. Variaciones del&nbsp;experimento</h2>
+<ul>
+<li>
+<p><strong>diferentes masas o largos de péndulos</strong><br />
+Se puede hacer el <a href="./pendulos-acoplados_cuenta-general.html">cálculo más general, con masas diferentes y largos diferentes en los&nbsp;péndulos.</a></p>
+</li>
+<li>
+<p><strong>configuraciones asimétricas</strong><br />
+¿Por qué todo tiene que ser tan simétrico? ¿Qué pasa si no lo&nbsp;es?</p>
+</li>
+<li>
+<p><strong>variar el acople</strong><br />
+    -Cambiando la tensión del hilo horizontal. (¿Se podrá medir?)<br />
+    -Agregando una masa en el&nbsp;medio.</p>
+</li>
+<li>
+<p><strong>agregando grados de libertad</strong><br />
+    -¿Qué pasa si acoplo el sistema con otro completamente distinto, pero con frecuencias similares?<br />
+<font color='gray'>(vi algo interesante con esto en el Pippard)</font><br />
+    -¿Y si agrego un grado de libertad más al&nbsp;problema?</p>
+</li>
+<li>
+<p><strong>(su idea aquí)</strong><br />&nbsp;blip&#8230;blip&#8230;</p>
+</li>
+</ul>
+<h2>Bibliografía</h2>
+<ul>
+<li>
+<p><em>Mechanics</em>, A. Sommerfeld. 4ta Ed. (Academic Press, New York, s.f.) <br />
+  <font color='gray'>(en Biblioteca. Tiene la teoría general de los modos normales)</font></p>
+</li>
+<li>
+<p><a href="http://scitation.aip.org/deliver/fulltext/aapt/journal/ajp/46/12/1.11387.pdf?itemId=/content/aapt/journal/ajp/46/12/10.1119/1.11387&amp;mimeType=pdf&amp;containerItemId=content/aapt/journal/ajp"><em>String-coupled pendulum oscilators: Theory and experiment</em></a><br />
+  <span class="caps">M.J.</span> Moloney, <em>Am. J. Phys.</em>  <strong>46</strong>, 1245 (1978)<br />
+  <font color='gray'>(calculan las frecuencias para nuestra configuración geométrica de hilos)</font></p>
+</li>
+</ul></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posteado por <span class="fn">Willy Pregliasco</span>
+  </span>
+<time datetime="2015-10-29T00:00:00-03:00" pubdate>jue 29 octubre 2015</time>  <span class="categories">
+    <a class="category" href="./tag/pendulos-acoplados.html">péndulos acoplados</a>
+  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Commentarios</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recientes</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./pendulos-acoplados.html">Péndulos acoplados</a>
+      </li>
+      <li class="post">
+          <a href="./my-super-post.html">Aquí me pongo a cantar</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categorías</h1>
+    <ul id="recent_posts">
+        <li><a href="./subcategory/experimental-1/show.html">experimental 1</a></li>
+        <li><a href="./subcategory/misc/show.html">misc</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Etiquetas</h1>
+    <a href="./tag/pendulos-acoplados.html">péndulos acoplados</a>  </section>
+
+
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Willy Pregliasco -
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script type="text/javascript">
+    var disqus_shortname = 'http://disqus.com/by/WillyPregliasco';
+    var disqus_identifier = '/pendulos-acoplados.html';
+    var disqus_url = './pendulos-acoplados.html';
+    var disqus_title = 'Péndulos&nbsp;acoplados';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+</body>
+</html>
