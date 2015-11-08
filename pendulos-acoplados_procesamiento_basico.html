@@ -153,7 +153,30 @@ $(document).ready(function(){
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Procesamiento-de-datos-de-Péndulos-Acoplados">Procesamiento de datos de P&#233;ndulos Acoplados<a class="anchor-link" href="#Procesamiento-de-datos-de-Péndulos-Acoplados">&#182;</a></h1><h2 id="Encontrar-ceros,-alturas-y-anchos">Encontrar ceros, alturas y anchos<a class="anchor-link" href="#Encontrar-ceros,-alturas-y-anchos">&#182;</a></h2><p>La medición de péndulos acoplados implica la lectura del voltímetro doble.<br>
+<p><strong>Péndulos&nbsp;acoplados</strong></p>
+
+</div>
+</div>
+</div>
+	
+	
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Procesamiento-de-datos:--ceros,-alturas-y-anchos">Procesamiento de datos:  ceros, alturas y anchos<a class="anchor-link" href="#Procesamiento-de-datos:--ceros,-alturas-y-anchos">&#182;</a></h1>
+</div>
+</div>
+</div>
+	
+	
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La medición de péndulos acoplados implica la lectura del voltímetro doble.<br>
 Allí tenemos la señal del imán que pasa sobre la bobina. La información que podemos sacar de esas mediciones&nbsp;es:</p>
 <ul>
 <li>la altura de los&nbsp;picos,</li>
@@ -164,6 +187,12 @@ Allí tenemos la señal del imán que pasa sobre la bobina. La información que 
 <p>El objetivo de este apunte es apenas obtener los tiempos de crice por cero, la altura de los picos y el&nbsp;ancho.</p>
 <p>Cambiando el archivo de entrada, se va procesando en cada celda.<br>
 Al principio de las celdas, entre líneas de <code>##################</code> están los parámetros de&nbsp;entrada.</p>
+<ul>
+<li><a href="#1.-Importo-datos">1. Importo&nbsp;datos</a></li>
+<li><a href="#2.-Ubicar-los-máximos-y-mínimos-significativos">2. Ubicar los máximos y mínimos&nbsp;significativos</a></li>
+<li><a href="#3.-Ubicar-los-cruces-por-cero">3. Ubicar los cruces por&nbsp;cero</a></li>
+<li><a href="#4.-Guardo-los-datos">4. Guardo los&nbsp;datos</a></li>
+</ul>
 
 </div>
 </div>
@@ -1370,7 +1399,18 @@ TkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-Ubicar-los-máximos-y-mínimos-significativos">2. Ubicar los m&#225;ximos y m&#237;nimos significativos<a class="anchor-link" href="#2.-Ubicar-los-máximos-y-mínimos-significativos">&#182;</a></h2><p>Los picos están donde se suceden un máximo y un&nbsp;mínimo.</p>
+<h2 id="2.-Ubicar-los-máximos-y-mínimos-significativos">2. Ubicar los m&#225;ximos y m&#237;nimos significativos<a class="anchor-link" href="#2.-Ubicar-los-máximos-y-mínimos-significativos">&#182;</a></h2>
+</div>
+</div>
+</div>
+	
+	
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Los picos están donde se suceden un máximo y un&nbsp;mínimo.</p>
 <p>Esto suena fácil, pero existe el ruido. Necesito caracterizarlo para establecer&nbsp;umbrales.</p>
 <p>Para eso, hacemos una rutina de suavizado, que promedia los vecinos. Se aplica varias veces.<br>
 La idea es atenuar el ruido sin arruinar mucho los picos. El parámetro de ajuste es el tamaño del&nbsp;kernel.</p>
@@ -2763,7 +2803,18 @@ Y4wxxhhjSXGjkTHGGGOMMcZYUtxoZIwxxhhjjDGW1P8D6mYDWzCJE2IAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3.-Ubicar-los-cruces-por-cero">3. Ubicar los cruces por cero<a class="anchor-link" href="#3.-Ubicar-los-cruces-por-cero">&#182;</a></h2><p>Algunos picos medidos cruzan por cero con rampa de pendiente positiva y otros con pendiente negativa.<br>
+<h2 id="3.-Ubicar-los-cruces-por-cero">3. Ubicar los cruces por cero<a class="anchor-link" href="#3.-Ubicar-los-cruces-por-cero">&#182;</a></h2>
+</div>
+</div>
+</div>
+	
+	
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Algunos picos medidos cruzan por cero con rampa de pendiente positiva y otros con pendiente negativa.<br>
 La idea es ubicar la secuencia de máximos con la pendiente correcta, y que no estén separados más de un&nbsp;período.</p>
 <p>Cuando encuentro los pares de máximo/mínimo, calculo el tiempo entre ambos, la diferencia de alturas entre extremos  y el cruce por&nbsp;cero.</p>
 <p>Para calcular el cruce por ceros, ajusto una recta entre los extremos. Anda&nbsp;fenómeno.</p>
@@ -3711,7 +3762,18 @@ SsijU8z3jQ0AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="4.-Guardo-los-datos">4. Guardo los datos<a class="anchor-link" href="#4.-Guardo-los-datos">&#182;</a></h2><p>Guardo los datos en archivos que agregan <code>-med</code> al nombre&nbsp;original.</p>
+<h2 id="4.-Guardo-los-datos">4. Guardo los datos<a class="anchor-link" href="#4.-Guardo-los-datos">&#182;</a></h2>
+</div>
+</div>
+</div>
+	
+	
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Guardo los datos en archivos que agregan <code>-med</code> al nombre&nbsp;original.</p>
 <p>Guarda en cuatro&nbsp;columnas:</p>
 $$ Z_1,\ H_1,\ W_1,\ \ Z_2,\ H_2,\ W_2 $$<p>en formato  <code>csv</code>  (<em>comma separated values</em>).</p>
 
@@ -3873,6 +3935,8 @@ $$ Z_1,\ H_1,\ W_1,\ \ Z_2,\ H_2,\ W_2 $$<p>en formato  <code>csv</code>  (<em>c
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
      })();
   </script>
-
+  
+  <script id="dsq-count-scr" src="//willypregliasco.disqus.com/count.js" async></script>
+    
 </body>
 </html>
