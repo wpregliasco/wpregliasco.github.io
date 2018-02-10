@@ -2,7 +2,8 @@
 >Para la dama y el caballero.
 Con minutero y con segundero....
 
-Esta es una página web programada en html (javascript) llamada `clock.html`
+Esta es una página web programada en html (javascript) llamada `clock.html`.
+Puede bajarse/abrirse desde [este link](clock.html).
 El propósito es hacer una cuenta regresiva para que vea un conferencista y vea cuánto tiempo le queda. Copié la idea de las charlas TED.
 
 Si se coloca el navegador en pantalla completa queda bastante coqueto. No entendí todavía cómo hacer la pantalla completa en dispositivos android, pero igual funciona razonablemente.
@@ -37,6 +38,7 @@ http://clock.html?min=15&mid=5&end=1
 Puede omitirse cualquiera de los parámetros y elegirá el valor default.  
 
 3. Usando los siguientes links:
+
 | link   | min | mid | end |
 |---|---:|---:|---:|
 | [1 hora](clock.html?min=60&mid=30&end=10) | 60  | 30 | 10|
