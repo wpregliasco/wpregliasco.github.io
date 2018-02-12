@@ -6,7 +6,7 @@ Esta es una página web programada en html (javascript) llamada `clock.html`.
 Puede bajarse/abrirse desde [este link](clock.html).
 El propósito es hacer una cuenta regresiva para que vea un conferencista y vea cuánto tiempo le queda. Copié la idea de las charlas TED.
 
-Si se coloca el navegador en pantalla completa queda bastante coqueto. No entendí todavía cómo hacer la pantalla completa en dispositivos android, pero igual funciona razonablemente.
+Si se coloca el navegador en pantalla completa queda bastante coqueto. No entendí todavía cómo hacer la pantalla completa en dispositivos android, pero igual funciona razonablemente. No olvidar desactivar el apagado de pantalla, aunque el programa sigue corriendo sin problemas. 
 
 Se puede usar desde los links que hay a continuación o bajarla al propio dispositivo y correrla localmente.
 
