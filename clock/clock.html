@@ -65,24 +65,41 @@
     window.onkeypress = click;
     function click() {
         if (onTime==0) {
-            if (timer>0){ onTime=1;}
+            if (timer>0){ 
+                onTime=1;
+                var date = new Date();
+                t0 = t0 + (date.getTime() -tint); 
+            }
             else {
+                var date = new Date();
+                t0 = date.getTime();
+                tint = t0;
                 timer = min0*60;
                 styleTime();
                 dispTime(timer);
-            } 
+            }  
         } 
-        else           { onTime=0; }
+        else{ 
+            onTime=0;
+            var date = new Date();
+            tint = date.getTime(); 
+        }
         
     }
     
     // Read min/mid/end (url variable)
+    var t0;
+    var tint;
     var min0;
     var tMid;    
     var tFin; 
     var timer;
     
     function load() {
+        var date = new Date();
+        t0 = date.getTime();
+        tint = t0;
+        
         var arr = document.URL.match(/min=([0-9]+)/);
         min0 = arr ? arr[1] : 45;
         timer = min0*60;
@@ -137,8 +154,11 @@
     // Clock
     setInterval(tick,1000);
     function tick () {
+        var telap; 
+        var date = new Date();
         if(onTime==1){
-            timer--;
+            telap = (date.getTime()-t0)/1000;
+            timer = Math.round(min0*60-telap);
             styleTime();
             if (timer>=0){
                 dispTime(timer);
